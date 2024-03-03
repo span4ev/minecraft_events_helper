@@ -316,7 +316,7 @@ QFrame &gt; QLabel, #status_bar {
      <property name="geometry">
       <rect>
        <x>191</x>
-       <y>11</y>
+       <y>10</y>
        <width>91</width>
        <height>21</height>
       </rect>
