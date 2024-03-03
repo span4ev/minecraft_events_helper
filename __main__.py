@@ -8,20 +8,20 @@ class QTWindow(QMainWindow):
 
 	def __init__(self):
 		super().__init__()
-		uic.loadUi		(self.ui_filename, self)
-		self.setWindowTitle	(self.ui_title)
+		uic.loadUi				(self.ui_filename, self)
+		self.setWindowTitle		(self.ui_title)
 
-		self.config_file_name 			= 'config.json'
+		self.config_file_name 		= 'config.json'
 		self.config 	  			= {}
 
 		self.interval				= 36
 		self.start_delay 			= 2
-		self.day 				= 1
+		self.day 					= 1
 
 		self.after_days 			= 0
 		self.on_day 				= 0
 		self.total_events 			= 0
-		self.another_events 			= 0
+		self.another_events 		= 0
 		self.event_today 			= False
 		self.events 				= []
 
