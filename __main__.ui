@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>312</width>
-    <height>679</height>
+    <width>311</width>
+    <height>666</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,7 +51,7 @@ QFrame &gt; QLabel, #status_bar {
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>230</y>
+      <y>10</y>
       <width>291</width>
       <height>81</height>
      </rect>
@@ -114,7 +114,7 @@ QFrame &gt; QLabel, #status_bar {
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>320</y>
+      <y>100</y>
       <width>291</width>
       <height>121</height>
      </rect>
@@ -133,7 +133,7 @@ QFrame &gt; QLabel, #status_bar {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>131</width>
+       <width>171</width>
        <height>21</height>
       </rect>
      </property>
@@ -150,7 +150,7 @@ QFrame &gt; QLabel, #status_bar {
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ближайшее хоро: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ближайшее событие: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_desc_path_to_read_10">
@@ -158,7 +158,7 @@ QFrame &gt; QLabel, #status_bar {
       <rect>
        <x>10</x>
        <y>90</y>
-       <width>131</width>
+       <width>171</width>
        <height>21</height>
       </rect>
      </property>
@@ -175,7 +175,7 @@ QFrame &gt; QLabel, #status_bar {
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Всего было хоро: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Всего было событий: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_desc_path_to_read_3">
@@ -344,9 +344,9 @@ QFrame &gt; QLabel, #status_bar {
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>570</y>
       <width>291</width>
-      <height>101</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -402,39 +402,14 @@ QFrame &gt; QLabel, #status_bar {
       <number>2</number>
      </property>
     </widget>
-    <widget class="QLabel" name="label_desc_path_to_read_8">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>281</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Microsoft YaHei UI</family>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string>По умолчанию сохраняется в папку программы</string>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как правило - это 2 дня после вайпа&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
    </widget>
    <widget class="QListWidget" name="list_widget_another_events">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>540</y>
+      <y>320</y>
       <width>291</width>
-      <height>114</height>
+      <height>160</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -445,9 +420,9 @@ QFrame &gt; QLabel, #status_bar {
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>120</y>
+      <y>490</y>
       <width>291</width>
-      <height>101</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -503,37 +478,12 @@ QFrame &gt; QLabel, #status_bar {
       <number>36</number>
      </property>
     </widget>
-    <widget class="QLabel" name="label_desc_path_to_read_9">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>281</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Microsoft YaHei UI</family>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string>По умолчанию сохраняется в папку программы</string>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как правило - это 36 дней для хоро&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
    </widget>
    <widget class="QFrame" name="frame_path_to_read_5">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>450</y>
+      <y>230</y>
       <width>291</width>
       <height>81</height>
      </rect>
@@ -569,7 +519,7 @@ QFrame &gt; QLabel, #status_bar {
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Показать следующие n события&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Показать следующие n событий&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="sbox_another_events">
@@ -596,7 +546,7 @@ QFrame &gt; QLabel, #status_bar {
     <property name="geometry">
      <rect>
       <x>58</x>
-      <y>656</y>
+      <y>645</y>
       <width>241</width>
       <height>21</height>
      </rect>

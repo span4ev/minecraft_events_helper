@@ -1,10 +1,9 @@
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QListWidget, QSpinBox
 from PyQt5 import uic
 import sys, json
 
 class QTWindow(QMainWindow):
-	ui_filename = 'horo_info.ui'
+	ui_filename = '__main__.ui'
 	ui_title	= 'Minecraft events helper'
 
 	def __init__(self):
