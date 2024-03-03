@@ -1,41 +1,40 @@
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QListWidget, QSpinBox
 from PyQt5 import uic
 import sys, json
 
 class QTWindow(QMainWindow):
 	ui_filename = 'horo_info.ui'
-	ui_title	= 'Minecraft events helper'
+	ui_title    = 'Minecraft events helper'
 
 	def __init__(self):
 		super().__init__()
-		uic.loadUi				(self.ui_filename, self)
-		self.setWindowTitle		(self.ui_title)
+		uic.loadUi	   (self.ui_filename, self)
+		self.setWindowTitle(self.ui_title)
 
-		self.config_file_name 		= 'config.json'
+		self.config_file_name 			= 'config.json'
 		self.config 	  			= {}
 
 		self.interval				= 36
 		self.start_delay 			= 2
-		self.day 					= 1
+		self.day 				= 1
 
 		self.after_days 			= 0
 		self.on_day 				= 0
 		self.total_events 			= 0
-		self.another_events 		= 0
+		self.another_events 			= 0
 		self.event_today 			= False
 		self.events 				= []
 
 		self.data_sboxes = {
-			'sbox_day'				: 'day',
+			'sbox_day'			: 'day',
 			'sbox_start_delay'		: 'start_delay',
 			'sbox_interval'			: 'interval',
-			'sbox_another_events'	: 'another_events'
+			'sbox_another_events'		: 'another_events'
 		}
 		self.data_labels = {
 			'label_after_days' 	 	: 'after_days',
 			'label_on_day' 		 	: 'on_day',
-			'label_total_events' 	: 'total_events'
+			'label_total_events' 		: 'total_events'
 		}
 
 		self.start()
@@ -108,7 +107,7 @@ class QTWindow(QMainWindow):
 
 	def set_values(self):
 
-		self.day 		 = self.sbox_day.value()
+		self.day 	 = self.sbox_day.value()
 		self.start_delay = self.sbox_start_delay.value()
 		self.interval  	 = self.sbox_interval.value()
 
@@ -134,8 +133,8 @@ class QTWindow(QMainWindow):
 	def update_events_list(self):
 
 		self.another_events = self.sbox_another_events.value()
-		new_events 			= self.return_events_list(self.another_events)
-		prev_events 		= self.events
+		new_events 	    = self.return_events_list(self.another_events)
+		prev_events 	    = self.events
 
 		if set(new_events) != set(prev_events):
 			self.list_widget_another_events.clear()
